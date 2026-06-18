@@ -1,17 +1,16 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
-import {defineConfig} from 'vite';
+import { defineConfig } from 'vite';
 
-export default defineConfig(() => 
-  base:"/KaranRamar/"
-  return {
-    plugins: [react(), tailwindcss()],
-    resolve: {
-      alias: {
-        '@': path.resolve(__dirname, '.'),
-      },
+export default defineConfig({
+  base: '/game-ironman/',
+
+  plugins: [react(), tailwindcss()],
+
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, '.'),
     },
-  
-  };
+  },
 });
